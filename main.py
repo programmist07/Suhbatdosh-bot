@@ -106,7 +106,7 @@ async def text_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text("Siz xabar yubormadingiz yoki noto'g'ri ma'lumot yubordingiz!")
 
 
-application = ApplicationBuilder().token("7683580444:AAEhOvHHiTflRieeqkKBC3wyCGf7dzwQ9lU").build()
+application = ApplicationBuilder().token("Token Here").build()
 
 application.add_handler(CommandHandler("start", start))
 application.add_handler(CallbackQueryHandler(button_handler))
